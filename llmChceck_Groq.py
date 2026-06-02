@@ -3,6 +3,9 @@
 ##  pip install langchain langchain-groq
 ##  https://docs.langchain.com/oss/python/integrations/chat/groq
 
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
+
 from langchain_groq import ChatGroq
 
 llm = ChatGroq(

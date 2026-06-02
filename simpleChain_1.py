@@ -1,5 +1,8 @@
 ## install -> pip install grandalf
 
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
+
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_groq import ChatGroq

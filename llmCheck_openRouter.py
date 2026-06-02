@@ -1,5 +1,7 @@
 # https://docs.langchain.com/oss/python/integrations/chat/anthropic
 
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
 
 import os
 from langchain_openrouter import ChatOpenRouter

@@ -1,5 +1,7 @@
 # pip install -U langchain langchain-openai
 
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
 
 from langchain_openai import OpenAIEmbeddings
 

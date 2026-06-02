@@ -2,6 +2,8 @@
 # LandChain provides the parsers that make the same job easy
 #  JSON will help to parse the data.
 
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
 
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate

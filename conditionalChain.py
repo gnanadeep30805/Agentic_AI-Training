@@ -1,3 +1,6 @@
+import warnings
+warnings.filterwarnings('ignore', message='.*Pydantic V1 functionality.*')
+
 import os
 from dotenv import load_dotenv
 

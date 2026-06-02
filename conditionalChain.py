@@ -1,10 +1,7 @@
-import warnings
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
-warnings.filterwarnings('ignore', message='.*Core Pydantic V1 functionality.*')
 
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate
